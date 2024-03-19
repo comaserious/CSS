@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css기본선택자3</title>
+    <style>
+        /* 형제 탐색 선택자들 */
+        /* 형제 관계 관련 선택자들은 한칸 띄워서 쓰자 */
+        /* 형제 관계 태그 중 첫번째 태그 선택 */
+        #test1 :first-child{
+            background-color: red;
+        }
+        #test1 :last-child{
+            background-color: orange;
+        }
+
+        /* 형제 관계중 수열번째 태그 선택(순서 체계(1부터)) (2n 짝수 아이들만 선택)*/
+        #test1 :nth-child(2n){
+            background-color: aqua;
+        }
+
+        /* 형제 관계중 뒤에서 수열번째 태그 선택 */
+        #test1 :nth-last-child(4){     /*뒤에서 4번째를 의미한다*/
+            background-color: blueviolet;
+        }
+
+        /* 형제 관계중 첫번째 태그 선택 */
+        /* 태그를 지정하지 않으면 태그별로 첫번째를 선택+ */
+        #test2 :first-of-type{
+            background-color: red;
+        }
+
+        /* 형제 관계중 마지막 태그 선택 */
+        #test2 :last-of-type{
+            background-color: blue;
+        }
+
+        /* 형제 관계중 앞에서 수열번째 태그 선택 */
+        #test2 p:nth-of-type(2n){
+            background: teal;
+        }
+
+        /* 형제 관계 태그중 뒤에서 수열번째 태그 선택 */
+        #test2 P:nth-last-of-type(3){
+            background-color: black;
+        }
+
+        /* 부정선택자 */
+        #test3 p:not(:nth-child(2n-1)){
+            background-color: brown;
+        }
+
+        /* 첫 번째 글자 선택
+            em : 부모 요소의 글꼴 크기를 기준으로 그 크기의 배수로 요소 크기를 정의한다. 반응형 웹 디자인에서 유용하게 쓰인다
+        */
+        #test4 p:first-letter{
+            /* 각 p 태그 내 문자의 첫번째글자에 일괄적으로 적용이 된다 */
+            font-size: 2em;
+        }
+
+        #test4 p:first-line{
+            background-color: coral;
+        }
+        
+        /* 태그 뒤에 위치하는 공간 선택 */
+        #test4 p:after{
+            content: "@@@ 태그 뒤에 공간 추가@@@";
+        }
+
+        /* 사용자가 드래그한 글자를 선택 */
+        #test4 p::selection{
+            background-color: red;
+        
+        }
+    </style>
+</head>
+<body>
+    <h2>일반 구조 선택자</h2>
+    <p>특정한 위치에 있는 태그 선택(위치로 구분)</p>
+    div#test1>(p{테스트$}*5+pre{테스트@6})  
+    <div id="test1">
+        <p>테스트1</p>
+        <p>테스트2</p>
+        <p>테스트3</p>
+        <p>테스트4</p>
+        <p>테스트5</p>
+        <pre>테스트6</pre>
+    </div>   
+    <hr>
+    <h2>형태구조 선택자(태그별 구분)</h2>
+    <p>특정한 위치에 있는 태그 선택(태그별로 구분한다)</p>
+    <div id="test2">
+        <p>테스트1</p>
+        <p>테스트2</p>
+        <p>테스트3</p>
+        <p>테스트4</p>
+        <p>테스트5</p>
+        <pre>테스트6</pre>
+        <pre>테스트7</pre>
+    </div>
+    <hr>
+    <h2>부정선택자</h2>
+    <div id="test3">
+        <p>테스트1</p>
+        <p>테스트2</p>
+        <p>테스트3</p>
+        <p>테스트4</p>
+        <p>테스트5</p>
+        <pre>테스트6</pre>
+    </div>
+    <hr>
+    <h2>문자 선택자</h2>
+    <p>태그 내부에서 특정 조건의 문자를 선택하는 선택자</p>
+    <div id="test4">
+        <p>안녕하세요. <br>저는 이호준입니다 저는 html과 css가 싫어요</p>
+        <p>두번째 줄 테스트입니다</p>
+        <p>세번째 줄 테스트입니다</p>
+    </div>
+    
+    
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:800px;
+            height:800px;
+            margin:auto;
+        }
+        header{
+            height:10%;
+            width: 100%;
+            background-color: orangered;
+            color :white;
+            font-weight: bold;
+            text-align: center;
+        }
+        nav{
+            height: 5%;
+            width: 100%;
+            background-color: gray;
+            color :white;
+            font-weight: bold;
+            text-align: center;
+        }
+        section{
+            height: 75%;
+            width: 80%;
+            background-color: rgb(79, 199, 79);
+            float: left;
+            color :white;
+            font-weight: bold;
+            text-align: center;
+            
+        }
+        aside{
+            height: 75%;
+            width: 20%;
+            background-color: blue;
+            float: right;
+            color :white;
+            font-weight: bold;
+            text-align: center;
+        }
+        footer{
+            height: 10%;
+            width: 100%;
+            background-color: purple;
+            color :white;
+            font-weight: bold;
+            text-align: center;
+        }
+        #article1{
+            height:80%;
+            width: 35%;
+            background-color: hotpink;
+            float: left;
+            margin-left:2.5%;
+            margin-top: 7%;
+            color :white;
+            font-weight: bold;
+            text-align: center;
+        }
+        #article2{
+            height: 80%;
+            width: 60%;
+            float: right;
+            margin-right:2.5%;
+            margin-top: 7%;
+            color :white;
+            font-weight: bold;
+            text-align: center;
+        }
+        .side1{
+            height: 50%;
+            width: 100%;
+            background-color: orange;
+        }
+        .side2{
+            background-color: darkgreen;
+            height: 50%;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">페이지 레이아웃 설정</h1>
+    <hr>
+    <div>
+        <header>header</header>
+        <nav>nav</nav>
+        <section>
+            <p>section</p>
+            <article id="article1">article</article>
+            <article id="article2">
+                <article class="side1">article</article>
+                <article class="side2">article</article>
+            </article>
+
+        </section>
+        <aside>aside</aside>
+        <br clear="right">
+        <footer>footer</footer>
+    </div>
+    
+</body>
+</html>

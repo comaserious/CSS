@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            width: 500px;
+            height: 500px;
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+        }
+        header{
+            background-color: orangered;
+            height: 100px;
+            width: 500px;
+            position: relative;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            
+        }
+        nav{
+            height: 50px;
+            width: 500px;
+            background-color: gray;
+            position: relative;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            
+        }
+        section{
+            height: 300px;
+            width: 400px;
+            background-color: green;
+            position: relative;
+            float: left;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            
+            
+        }
+        aside{
+            
+            height:300px;
+            width:100px;
+            float: right;
+            background-color: blue;
+            position: relative;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+        }
+        footer{
+            height: 50px;
+            width: 500px;
+            background-color: purple;
+            position: relative;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+        }
+        article{
+            height: 230px;
+            width: 49%;
+            margin-top:60px;
+            display: flex;
+            position: relative;
+            justify-content: center;
+
+            
+        }
+        #article1{
+            
+            background-color: hotpink;
+        }
+        #article2{
+            background-color: orange;
+            margin-right:5%;
+        }
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>페이지 레이아웃 설정</h1>
+    <hr>
+    <div class="outer">
+        <header>
+            header
+        </header>
+        <nav>
+            nav
+        </nav>
+        <section>
+            <br clear="left">
+            
+            <article id="article1">article1</article>
+            <article id="article2">article2</article>
+        </section>
+        <aside>
+            aside
+        </aside>
+        <br clear="right">
+        <footer>
+            footer
+        </footer>
+
+    </div>
+    
+    
+</body>
+</html>

@@ -25,14 +25,22 @@
         .test4 {
             margin-top: 50px;
             margin-left: 50px;
-            margin: auto;           /* ★요소를 가운데 정렬하고자 할때 자동으로 여백 조절을 해줌★ */
+            /* ★요소를 가운데 정렬하고자 할때 자동으로 여백 조절을 해줌★ */
+            margin: auto;           
         }
+        .my{
+            /*실험결과 패딩 200px 에 원본 사이즈 100px 이 맞다*/
+            width : 300px;
+            height: 300px;
+            background-color: yellow;
+            display: none;}
     </style>
     <title>레이아웃스타일3</title>
 </head>
 <body>
     <h1>여백 관련 속성</h1>
     <h4>기준 div</h4>
+    <div class="my"></div>
     <div class="test"></div>
 
     <h4>padding</h4>
@@ -47,7 +55,7 @@
     <h4>box 레벨(block)이나 inline 레벨의 요소들 간의 간격을 조절하는 속성</h4>
     <pre>margin: 50px;</pre>
     <div class="test test3">콘텐츠 영역</div>
-    <pre>margin-top: 50px; margin-left: 50px;</pre>
+    <pre>margin-top: 50px; margin-left: 50px; margin: auto;로 자동으로 가운데 정렬된것</pre>
     <div class="test test4">콘텐츠 영역</div>
 
     <br><br><br><br><br><br><br><br><br><br><br><br><br>

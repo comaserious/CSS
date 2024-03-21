@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width:100vw;
+            height:200vh;
+            
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            height:10%;
+            width: 100%;
+            background-color: orangered;
+            color :white;
+            font-weight: bold;
+            
+        }
+        nav{
+            height: 5%;
+            width: 100%;
+            background-color: gray;
+            color :white;
+            font-weight: bold;
+        }
+        section{
+            height: 75%;
+            width: 80%;
+            background-color: rgb(79, 199, 79);
+            color :white;
+            font-weight: bold;
+            
+            
+        }
+        aside{
+            height: 75%;
+            width: 20%;
+            background-color: blue;
+            
+            color :white;
+            font-weight: bold;
+            display: inline-block !important;
+            
+            
+        }
+        footer{
+            height: 10%;
+            width: 100%;
+            background-color: purple;
+            color :white;
+            font-weight: bold;
+            
+            
+        }
+        #article1{
+            height:80%;
+            width: 35%;
+            background-color: hotpink;
+            
+            
+            
+            color :white;
+            font-weight: bold;
+            
+        }
+        #article2{
+            height: 80%;
+            width: 60%;
+            
+
+            
+            color :white;
+            font-weight: bold;
+            
+        }
+        .side1{
+            height: 50%;
+            width: 100%;
+            background-color: orange;
+        }
+        .side2{
+            background-color: darkgreen;
+            height: 50%;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">페이지 레이아웃 설정</h1>
+    <hr>
+    <div>
+        <header>header</header>
+        <br>
+        <nav>nav</nav>
+        <section>
+            <p style="text-align: center;">section</p>
+            <article id="article1">article</article>
+            <article id="article2">
+                <article class="side1">article</article>
+                <article class="side2">article</article>
+            </article>
+
+        </section>
+        <aside>aside</aside>
+        
+        <footer>footer</footer>
+    </div>
+    
+</body>
+</html>

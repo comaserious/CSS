@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height:100vh;
+            width: 100vw;
+            background-color: cyan;
+            display: grid;
+            grid-template-columns: 80% 20%;
+            grid-template-rows:  15% 5% 75% 5%;
+            grid-template-areas: 
+            'a a'
+            'b b'
+            'c d'
+            'e e'
+            ;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        header{
+            grid-area: a;
+            background-color: orangered;
+        }
+        nav{
+            grid-area: b;
+            background-color: gray;
+        }
+        section{
+            grid-area: c;
+            background-color: greenyellow;
+            display: flex;
+            flex-direction: column;
+        }
+        aside{
+            grid-area: d;
+            background-color: blue;
+        }
+        footer{
+            grid-area: e;
+            background-color: purple;
+        }
+        .article{
+            width: 95%;
+            height: 80%;
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-rows: 50% 50%;
+            grid-template-areas: 
+            'a b'
+            'a c';
+            position: relative;
+            left: 2.5%;
+            top: 5%;
+        }
+        #article1{
+            grid-area: a;
+            background-color: hotpink;
+        }
+        #article2{
+            grid-area: b;
+            background-color: orange;
+        }
+        #article3{
+            grid-area: c;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="justify-content: center;">페이지 레이아웃 설정</h1>
+    <hr>
+    <div class="container">
+        <header>header</header>
+        <nav>nav</nav>
+        <section>
+            <p>section</p>
+            <article class="article">
+                <article id="article1">article</article>
+                <article id="article2">article</article>
+                <article id="article3">article</article>
+            </article>
+        </section>
+        <aside>aside</aside>
+        <footer>footer</footer>
+    </div>
+    
+</body>
+</html>

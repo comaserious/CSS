@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:100vw;
+            height:100vh;
+            display: grid;
+            grid-template-columns: 15% 75% 10%;
+            grid-template-rows: 5% 90% 5%;
+            grid-template-areas: 
+            'a a a'
+            'b c d'
+            'e e e'
+            ;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+        header{
+            grid-area: a;
+            background-color: orangered;
+        }
+        nav{
+            grid-area: b;
+            background-color: gray;
+        }
+        section{
+            grid-area: c;
+            background-color: greenyellow;
+        }
+        aside{
+            grid-area: d;
+            background-color: cyan;
+        }
+        footer{
+            grid-area: e;
+            background-color: purple;
+            z-index: 3;
+            
+        }
+        .article{
+            width: 95%;
+            height: 95%;
+            display: grid;
+            grid-template-rows: repeat(3,1fr);
+            position: relative;
+            left: 2.5%;
+            top: 1%;
+        }
+        #article1{
+            background-color: hotpink;
+        }
+        #article2{
+            background-color: orange;
+        }
+        #article3{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">페이지 설정 레이아웃</h1>
+    <hr>
+    <div class="container">
+        <header>header</header>
+        <nav>nav</nav>
+        <section>
+        section
+            <article class="article">
+                <article id="article1">article</article>
+                <article id="article2">article</article>
+                <article id="article3">article</article>
+            </article>
+        </section>
+        <aside>aside</aside>
+        <footer>footer</footer>
+    </div>
+    
+</body>
+</html>

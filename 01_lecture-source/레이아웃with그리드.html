@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height:100vh;
+            width:100vw;
+            display: grid;
+            grid-template-columns: 80% 20%;
+            grid-template-rows: 15% 5% 75% 5%;
+            grid-template-areas: 
+            'a a'
+            'b b'
+            'c d'
+            'e e';
+            background-color: aqua;
+            color:white;
+            text-align: center;
+            font-weight: bold;
+        }
+        header{
+            grid-area: a;
+            background-color: orangered;
+
+        }
+        nav{
+            grid-area: b;
+            background-color: gray;
+        }
+        section{
+            grid-area: c;
+            background-color: greenyellow;
+            display : flex;
+            justify-content: center;
+            flex-direction: column;
+            
+        }
+        aside{
+            grid-area: d;
+            background-color: blue;
+        }
+        footer{
+            grid-area: e;
+            background-color: purple;
+        }
+        .article{
+            height:80%;
+            width: 94%;
+            display: flex;
+            left:3%;
+            position: relative;
+        }
+        #article1{
+            background-color: hotpink;
+            
+            height: 100%;
+            width:50%;
+            
+        }
+        #article2{
+            background-color: orange;
+            
+            height : 100%;
+            width: 50%;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">페이지 레이아웃 설정</h1>
+    <hr>
+    <div class="container">
+        <header>header</header>
+        <nav>nav</nav>
+        <section>
+            <p>section</p>
+            <article class="article">
+                <article id="article1">article</article>
+                <article id="article2">article</article>
+            </section>
+            </article>
+            
+        <aside>aside</aside>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>
